@@ -1,1 +1,28 @@
 work 1
+
+
+Class student:
+   def__init__(self, name, score):
+Self.name=Name
+Self.score=score 
+
+Class Gradebook:
+      def__init__(self):
+          self. student []
+     def add__Student (self,student):
+         self.student.append(student)
+   def get__ average(self):
+         if not get self.student:
+          return 0     
+   total_score=0
+  for student in self.student:
+     total_score +=student. score 
+return total_score/len(self.students)
+
+
+gradebook.add_student (student ("Alice ",85))
+gradebook.add_student(student ("john",92))
+gradebook.add_student(student (" maria",78))
+
+
+print(f" class average:{gradebook.get_average ():.2f}")
