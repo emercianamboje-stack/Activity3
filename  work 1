@@ -1,22 +1,27 @@
-work 1
+
 
 
 Class student:
+
    def__init__(self, name, score):
       Self.name=Name
       Self.score=score 
 
 Class Gradebook:
+
       def__init__(self):
           self. student []
+
       def add__Student (self,student):
          self.student.append(student)
+
       def get__ average(self):
          if not get self.student:
           return 0     
    total_score=0
   for student in self.student:
-     total_score +=student. score 
+     total_score +=student. score
+ 
     return total_score/len(self.students)
 
 
