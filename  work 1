@@ -1,33 +1,40 @@
 
+    
+   
+    
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
 
 
-Class student:
-
-   def__init__(self, name, score):
-      Self.name=Name
-      Self.score=score 
-
-Class Gradebook:
-
-      def__init__(self):
-          self. student []
-
-      def add__Student (self,student):
-         self.student.append(student)
-
-      def get__ average(self):
-         if not get self.student:
-          return 0     
-   total_score=0
-  for student in self.student:
-     total_score +=student. score
- 
-    return total_score/len(self.students)
+class Gradebook:
+    def __init__(self):
+        self.students = []  
+    
+    
+    def add_student(self, student):
+        self.students.append(student)
+    
+    
+    def get_average(self):
+        if not self.students:  
+            return 0
+        
+        total_score = 0
+        for student in self.students:
+            total_score += student.score
+        
+        return total_score / len(self.students)
 
 
-gradebook.add_student (student ("Alice ",85))
-gradebook.add_student(student ("john",92))
-gradebook.add_student(student (" maria",78))
+    
+    # Add students
+    gradebook.add_student(Student("Alice", 85))
+    gradebook.add_student(Student("maria", 92))
+    gradebook.add_student(Student("Charlie",78))
+
+    print(f"Class average: {gradebook.get_average():.2f}")  
 
 
-print(f" class average:{gradebook.get_average ():.2f}")
+
