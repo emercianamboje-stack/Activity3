@@ -19,8 +19,9 @@ class Gradebook:
             total_score += student.score
         
         return total_score / len(self.students)
+      
+        Gradebook=gradebook(())
 
-    
     gradebook.add_student(Student("Alice", 85))
     gradebook.add_student(Student("maria", 92))
     gradebook.add_student(Student("Charlie",78))
